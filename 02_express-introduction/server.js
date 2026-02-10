@@ -11,5 +11,7 @@ app.get('/about', (req, res) => {
     res.send('About Page')
 })
 
-
-app.listen(3000)        // starts an server
+// starts an server
+app.listen(3000, () => {
+    console.log("server is running...");
+})       
