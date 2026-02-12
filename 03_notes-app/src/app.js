@@ -36,8 +36,8 @@ app.delete('/notes/:index', (req, res) => {
 app.patch('/notes/:index', (req, res) => {
     const index = req.params.index
     const desc = req.body.description
-
     notes_array[index].description = desc
+    
     res.status(200).json({
         message : "description updated successfully"
     })
